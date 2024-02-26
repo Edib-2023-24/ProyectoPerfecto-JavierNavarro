@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../fonts/helveticaneue-medium.woff2) format("woff2"), url(../fonts/helveticaneue-medium.woff) format("woff");
+}
+
+.container {
+    background-color: #F1F1F1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica Neue", sans-serif;
+
+    & .boton {
+        cursor: pointer;
+        background-color: #FFF;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    }
+}
