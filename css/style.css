@@ -18,6 +18,9 @@
     --border-radiusbtn: 10px;
     --padding-vertical: 20px;
     --padding-horizontal: 30px;
+    --fontsize-titulo: 24px;
+    --fontsize-subtitulo: 14px;
+    --marginbottom-card: 10px;
 }
 
 .container {
@@ -29,11 +32,22 @@
     align-items: center;
     font-family: "Helvetica Neue", sans-serif;
 
-    & .boton {
+    & .card {
         cursor: pointer;
         background-color: var(--color-botonbg);
         padding: var(--padding-vertical) var(--padding-horizontal);
         border-radius: var(--border-radiusbtn);
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+
+        & .titulo {
+            font-size: var(--fontsize-titulo);
+            font-weight: 400;
+            margin-bottom: var(--marginbottom-card);
+        }
+
+        & .madeby {
+            font-size: var(--fontsize-subtitulo);
+            font-weight: 300;
+        }
     }
 }
