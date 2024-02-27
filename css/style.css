@@ -27,13 +27,11 @@
     background-color: var(--color-bg);
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     font-family: "Helvetica Neue", sans-serif;
 
-    & .card {
-        cursor: pointer;
+    & main {
         background-color: var(--color-botonbg);
         padding: var(--padding-vertical) var(--padding-horizontal);
         border-radius: var(--border-radiusbtn);
